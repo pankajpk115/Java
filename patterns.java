@@ -1,7 +1,7 @@
 public class patterns {
     public static void main(String args[]){
-        int n=5;
-        // int m=8;
+        int n=8;
+        int m=8;
 
         //Hollow Rectangle
         /*
@@ -186,19 +186,31 @@ public class patterns {
         //     }
         //     System.out.println();
         // }
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n-i;j++){
-                System.out.print(" ");
-            }
-            for(int j=1;j<=i;j++){
-                System.out.print(i + " ");  
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n-i;j++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print(i + " ");  
 
-            }
+        //     }
 
-            // for(int j=i-1;j<n;j++){
-            //     System.out.print(" ");
-            // }
-            System.out.println();
+        //     // for(int j=i-1;j<n;j++){
+        //     //     System.out.print(" ");
+        //     // }
+        //     System.out.println();
+        // }
+
+        for(int i =1;i<=n;i++){
+            for(int j=1;j<=m;j++){
+                if(i==1 | j==1 | i==n | j==m){
+                    System.out.print(" * ");
+                }
+                else{
+                    System.out.print("   ");
+                }
+            }
+            System.out.print("\n");
         }
     }
 }
